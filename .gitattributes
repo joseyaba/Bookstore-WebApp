@@ -1,0 +1,15 @@
+# Ignore coverage reports (SVG and static assets)
+Bookstore.API/coverage-report/** linguist-vendored
+
+# Ignore public folder files in React
+bookstore-client/public/** linguist-vendored
+
+# Ignore test and setup files in React
+bookstore-client/src/*.css linguist-vendored
+bookstore-client/src/reportWebVitals.js linguist-vendored
+bookstore-client/src/setupTests.js linguist-vendored
+bookstore-client/src/App.test.js linguist-vendored
+
+# Ignore lock files and default docs
+bookstore-client/package-lock.json linguist-vendored
+README.md linguist-documentation
