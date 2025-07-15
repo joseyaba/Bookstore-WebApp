@@ -1,0 +1,17 @@
+<RunSettings>
+  <DataCollectionRunSettings>
+    <DataCollectors>
+      <DataCollector friendlyName="XPlat code coverage">
+        <Configuration>
+          <ExcludeByFile>
+            <!-- Exact case and slash direction matter here -->
+            [*]**/Migrations/*.cs
+            [*]**/Program.cs
+            [*]Bookstore.API/Migrations/*.cs
+            [*]Bookstore.API/Program.cs
+          </ExcludeByFile>
+        </Configuration>
+      </DataCollector>
+    </DataCollectors>
+  </DataCollectionRunSettings>
+</RunSettings>
