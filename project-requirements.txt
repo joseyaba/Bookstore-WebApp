@@ -1,0 +1,53 @@
+=========================
+ Bookstore Web App Setup
+=========================
+
+BACKEND (.NET Core)
+---------------------
+• .NET SDK 8.0 or later
+• MySQL Server (if using a real DB instead of InMemory)
+• IDE: Visual Studio / Visual Studio Code (recommended)
+
+Required NuGet packages (already installed via .csproj):
+• Microsoft.EntityFrameworkCore.InMemory
+• Microsoft.AspNetCore.Authentication.JwtBearer
+• Microsoft.EntityFrameworkCore.Design
+• Swashbuckle.AspNetCore (for Swagger)
+• Moq (for testing)
+• xUnit
+• Microsoft.NET.Test.Sdk
+
+To run backend:
+1. Open Bookstore.API folder
+2. Run `dotnet restore`
+3. Run `dotnet run`
+4. Visit: https://localhost:7045/swagger
+
+---------------------
+
+FRONTEND (React)
+---------------------
+• Node.js (v16 or later)
+• npm (v8 or later) or yarn
+
+To install dependencies:
+1. Open bookstore-client folder
+2. Run `npm install`
+
+To start React app:
+• Run `npm start`
+
+---------------------
+
+TESTING
+---------------------
+• Backend: Run `dotnet test` inside `Bookstore.Tests` folder
+• Frontend: Optional Jest testing setup (can extend)
+
+---------------------
+
+NOTES
+---------------------
+• Make sure both backend and frontend are running concurrently
+• Use the Swagger UI to test APIs easily after running backend
+• Login via React app will store JWT token in localStorage for access control
